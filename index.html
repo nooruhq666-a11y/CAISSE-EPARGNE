@@ -424,7 +424,7 @@ let motDePasse = "";
 
 document.querySelectorAll('.clavier button').forEach(function(btn) {
   btn.addEventListener('click', function() {
-    if (navigator.vibrate) navigator.vibrate(30);
+    if (navigator.vibrate) navigator.vibrate(200);
     if (nbChiffres < cercles.length) {
       cercles[nbChiffres].classList.add('rempli');
       motDePasse += btn.textContent;
