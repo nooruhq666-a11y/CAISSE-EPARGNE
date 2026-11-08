@@ -358,8 +358,14 @@
   <img src="assets/aide.jpg" alt="Assistance">
 </button>
 
-<button id="initial-full-name" class="btn-gauche" aria-label="">FL</button>
-<span id="full-name" class="nom-utilisateur">Firstname Lastname <br> 03·····02</span>
+<?php
+  $data = json_decode(file_get_contents('data.json'), true);
+  $prenom = $data['prenom'] ?? 'Firstname';
+  $nom = $data['nom'] ?? 'Lastname';
+  $initiales = strtoupper(substr($prenom,0,1) . substr($nom,0,1));
+?>
+<button id="initial-full-name" class="btn-gauche" aria-label=""><?php echo $initiales; ?></button>
+<span id="full-name" class="nom-utilisateur"><?php echo htmlspecialchars($prenom . ' ' . $nom); ?> <br> 03·····02</span>
 
 <div class="conteneur">
   <img class="fond" src="assets/fond.jpg" alt="fond">
@@ -377,9 +383,9 @@
 
 <div id="ecran-mot-de-passe" class="ecran-mot-de-passe">
   <div class="mdp-haut">
-    <button id="initial-full-name-2" class="btn-gauche">FL</button>
-    <span class="nom-utilisateur">Firstname Lastname <br> 03·····02</span>
-  </div>
+  <button id="initial-full-name-2" class="btn-gauche"><?php echo $initiales; ?></button>
+  <span class="nom-utilisateur"><?php echo htmlspecialchars($prenom . ' ' . $nom); ?> <br> 03·····02</span>
+</div>
 
 <button class="mdp-fermer" aria-label="Fermer" onclick="fermerEtRecharger()">✕</button>
 

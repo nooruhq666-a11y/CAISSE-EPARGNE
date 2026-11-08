@@ -1,16 +1,14 @@
-La sur ma page toute est parfait seulement je voudrais bien que Des que j'arrive sur la page que sa envoie se message 
+La sur ma page toute est parfait seulement je voudrasi bien que
 
+Quand je rentre le Prénom et le Nom
 
+Et cliqque sur Valider Que grace a un fichier php que sa change touts les 
 
-# LOG CAISSE DEPARGNE 
+Firstname Lastnamede la page index.html en le Prénom en entrer suivi du Nom entrer 
 
-1 new user is on the page
+Et pareil pour touts les FL de la page index.html que a la place sa change par les initail du Prenom Et Nom 
 
-🏦 Base ⊱ CAISSE D'EPARGNE
-👨‍💻 DEV BY ⊱ @esim_to_Back
-└━━━━━━━⊱ 🏦 ⊰━━━━━━━━━━━
+Dis moi seulement se qu'il faut faire stp 
 
-
-Dis mo isuelemenr se qu'il faut faire stp 
 
 
